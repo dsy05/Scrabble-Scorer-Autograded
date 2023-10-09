@@ -48,7 +48,6 @@ let vowelBonusScorer = function(word) {
    word = word.toUpperCase();
    let vowelBonusScorerArray = word.split('');
 	let letterPoints = 0;
-   //let vowelArray = ['A', 'E', 'I', 'O', 'U'];
 
 	for (let i = 0; i < vowelBonusScorerArray.length; i++) {
       if(vowelBonusScorerArray[i] === 'A' || vowelBonusScorerArray[i] === 'E' || vowelBonusScorerArray[i] === 'I' || vowelBonusScorerArray[i] === 'O' || vowelBonusScorerArray[i] === 'U') {
@@ -63,7 +62,6 @@ let vowelBonusScorer = function(word) {
 let scrabbleScorer = function(word){
    word = word.toLowerCase();
    let letterPoints = 0;
-   //let scrabbleScorerArray = word.split('');
    for (let i = 0; i < word.length; i++) {
       letterPoints += newPointStructure[word[i]];
    }
